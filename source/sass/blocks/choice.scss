@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.choice__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 75%;
+    margin: 0 auto;
+}
+
+.choice__item {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 15px;
+}
+
+.choice__text {
+    display: flex;
+    flex-direction: column;
+}

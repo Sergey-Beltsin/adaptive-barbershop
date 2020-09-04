@@ -1,0 +1,67 @@
+@import "variables.scss";
+
+@font-face {
+    font-weight: normal;
+    font-family: "PT Sans Narrow";
+    font-style: normal;
+    font-display: swap;
+
+    src: url("../fonts/PTSans-Narrow.woff2") format("woff2"), url("../fonts/PTSans-Narrow.woff") format("woff");
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: "PT Sans Narrow";
+    font-style: normal;
+    font-display: swap;
+    
+    src: url("../fonts/PTSans-NarrowBold.woff2") format("woff2"), url("../fonts/PTSans-NarrowBold.woff") format("woff");
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'PT Sans Narrow', "Arial", sans-serif;
+    color: #f7f4f1;
+    font-style: normal;
+    
+    background-color: #242424;
+}
+
+.body--works {
+    background-color: #f8f5f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+    width: 160px;
+    height: 50px;
+
+    text-transform: uppercase;
+
+    border: solid 1px #e5ddd5;
+}

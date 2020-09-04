@@ -1,0 +1,235 @@
+@import "variables.scss";
+
+.sign-up {
+    color: #000000;
+}
+
+.sign-up__title {
+    font-size: 30.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+}
+
+.sign-up__form {
+    text-align: center;
+}
+
+.sign-up__item {
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.sign-up__item--main:last-child {
+    margin-bottom: 32px;
+}
+
+.sign-up__item--secondary {
+    &:nth-child(2) {
+        margin-bottom: 32px;
+    }
+
+    &:last-child {
+        margin-bottom: 42px;
+    }
+}
+
+.sign-up__input {
+    height: 50px;
+    width: 85%;
+
+    border: solid 1px #e5ddd5;
+
+    transition: 0.2s ease-out;
+
+    &--description {
+        height: 112px;
+    }
+
+    &:focus {
+        border: solid 1px #d1b69c;
+    }
+}
+
+.sign-up__item input[type="text"]:placeholder-shown {
+    padding-left: 20px;
+}
+
+.sign-up__item input[type="text"]::placeholder {
+    margin-left: 20px;
+}
+
+.sign-up__choice {
+    padding-top: 35px;
+
+    font-size: 21px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.24;
+    text-align: center;
+}
+
+.sign-up__submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    width: 60%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    border: none;
+    background-color: #826550;
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+        background-color: #774e31;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .sign-up__item__wrapper {
+        display: flex;
+        justify-content: center;
+
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    .sign-up__item--main {
+        flex-grow: 1;
+        margin-right: -50px;
+
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .sign-up__item--main:last-child {
+        margin-bottom: 0;
+    }
+    
+    .sign-up__item--secondary {
+        margin-bottom: 35px;
+
+        &:nth-child(2) {
+            margin-bottom: 35px;
+        }
+    }
+
+    .sign-up__choice {
+        width: 88%;
+        margin: 40px auto;
+        font-size: 30.5px;
+        line-height: 1;
+
+        position: relative;
+
+        &::after,
+        &::before {
+            content: "";
+
+            height: 1px;
+            width: 23%;
+
+            background-color: #e5ddd5;
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 13px;
+            left: 1%;
+        }
+
+        &::before {
+            position: absolute;
+            bottom: 13px;
+            right: 1%;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .sign-up__item__wrapper {
+        width: 960px;
+
+        justify-content: space-between;
+
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .sign-up__item--main {
+        width: 295px;
+        height: 70px;
+        margin-right: 0;
+
+        flex-grow: 0;
+
+        // &:first-child {
+        //     margin-left: 10px;
+        // }
+
+        // &:last-child {
+        //     margin-right: 10px;
+        // }
+    }
+
+    .sign-up__form {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .sign-up__item__wrapper--secondary {
+        display: flex;
+
+        width: 960px;
+    }
+
+    .sign-up__item--secondary {
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .sign-up__input--secondary {
+        width: 437px;
+    }
+
+    .sign-up__input--description {
+        width: 920px;
+        height: 211px;
+
+        position: relative;
+        left: 0;
+
+        margin-left: 0;
+    }
+    
+    .sign-up__item--secondary-main {
+        padding-bottom: 50px;
+    }
+
+    .sign-up__item__wrapper {
+        margin-bottom: 12px;
+    }
+
+    .sign-up__item--secondary:nth-child(2) {
+        margin-bottom: 20px;
+    }
+}

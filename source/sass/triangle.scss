@@ -1,0 +1,170 @@
+.triangle__wrapper {
+    width: 100%;
+}
+
+.triangle {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    // width: 100%;
+    
+
+    &::after,
+    &::before {
+        content: '';
+
+        position: absolute;
+    }
+
+    &::after {
+        bottom: -15px;
+        left: -2px;
+
+        border: 23px solid transparent;
+        border-left: 65vw solid #f8f5f2;
+        transform: rotate(4deg);
+    }
+
+    &::before {
+        bottom: -15px;
+        right: calc(50% - 50vw);
+        border-left: 50vw solid transparent;
+
+        border: 23px solid transparent;
+        border-right: 65vw solid #f8f5f2;
+        transform: rotate(-4deg);
+    }
+}
+
+
+@media (min-width: 600px) {
+    .triangle {
+        &::after {
+            transform: rotate(2.5deg);
+        }
+
+        &::before {
+            transform: rotate(-2.5deg);
+        }
+    }
+}
+
+@media (min-width: 1020px) {
+    .triangle {
+        &::after {
+            transform: rotate(2deg);
+        }
+
+        &::before {
+            transform: rotate(-2deg);
+        }
+    }
+}
+
+@media (min-width: 1275px) {
+    .triangle {
+        &::after {
+            transform: rotate(1.5deg);
+        }
+
+        &::before {
+            transform: rotate(-1.5deg);
+        }
+    }
+}
+
+@media (min-width: 1700px) {
+    .triangle {
+        &::after {
+            transform: rotate(1.3deg);
+        }
+
+        &::before {
+            transform: rotate(-1.3deg);
+        }
+    }
+}
+
+@media (min-width: 2200px) {
+    .triangle {
+        &::after {
+            transform: rotate(1.1deg);
+        }
+
+        &::before {
+            transform: rotate(-1.1deg);
+        }
+    }
+}
+
+@media (min-width: 2380px) {
+    .triangle {
+        &::after {
+            transform: rotate(1deg);
+        }
+
+        &::before {
+            transform: rotate(-1deg);
+        }
+    }
+}
+
+@media (min-width: 2620px) {
+    .triangle {
+        &::after {
+            transform: rotate(0.9deg);
+        }
+
+        &::before {
+            transform: rotate(-0.9deg);
+        }
+    }
+}
+
+@media (min-width: 2900px) {
+    .triangle {
+        &::after {
+            transform: rotate(0.8deg);
+        }
+
+        &::before {
+            transform: rotate(-0.8deg);
+        }
+    }
+}
+
+@media (min-width: 3275px) {
+    .triangle {
+        &::after {
+            transform: rotate(0.7deg);
+        }
+
+        &::before {
+            transform: rotate(-0.7deg);
+        }
+    }
+}
+
+@media (min-width: 3700px) {
+    .triangle {
+        &::after {
+            transform: rotate(0.6deg);
+        }
+
+        &::before {
+            transform: rotate(-0.6deg);
+        }
+    }
+}
+
+@media (min-width: 4300px) {
+    .triangle {
+        &::after {
+            transform: rotate(0.5deg);
+        }
+
+        &::before {
+            transform: rotate(-0.5deg);
+        }
+    }
+}

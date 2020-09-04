@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body class="body--works">
+    
+    <div style="display: none;">
+        <include src="build/img/sprite.svg"></include>
+    </div>
+    
+    <header class="page-header">
+        <div class="page-header__logo page-header__logo__wrapper page-header__logo--works">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/svg/desktop-logo.svg">
+                <source media="(min-width: 768px)" srcset="img/svg/tablet-logo.svg">
+                <img class="page-header__logo-image" src="img/svg/mobile-logo.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+            </picture>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span class=""></span></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a class="item__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="item__link" href="our_works.html">Наши работы</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a class="item__link">Записаться</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="item__link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a class="item__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                    </li>
+                </ul>
+
+                <ul class="main-nav__list user-list">
+                    <li class="user-list__item">
+                        <a href="#" class="user-list__login">
+                            <svg class="user-list__login-icon" width="16" height="16" 
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 21.333332 21.333332"
+   height="21.333332"
+   width="21.333332"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,21.333333)"
+     id="g10"><g
+       transform="scale(0.1)"
+       id="g12"><path
+         id="path14"
+         style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 0,90 h 70.0977 v 29.398 L 109.602,79.9023 70.0977,40.8984 v 28.5 L 0,69.7969 V 90" /><path
+         id="path16"
+         style="fill-rule:nonzero;stroke:none"
+         d="M 70.0977,160 V 140 H 140.305 V 20.0977 H 70.0977 V 0 H 160 V 160 H 70.0977" /></g></g></svg>
+         Войти
+        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main class="page-main">
+
+
+        <section class="sign-up">
+            <div class="sign-up__title__wrapper">
+                <h1 class="sign-up__title">Запись на стрижку</h1>
+            </div>
+
+            <form action="" method="POST" class="sign-up__form">
+                <div class="sign-up__form__wrapper">
+                    <div class="sign-up__item__wrapper">
+                        <p class="sign-up__item sign-up__item--main">
+                            <input type="text" placeholder="Фамилия" class="sign-up__input">
+                        </p>
+                        <p class="sign-up__item sign-up__item--main">
+                            <input type="text" placeholder="Имя" class="sign-up__input">
+                        </p>
+                        <p class="sign-up__item sign-up__item--main">
+                            <input type="text" placeholder="Отчество" class="sign-up__input">
+                        </p>
+                    </div>
+                    <div class="sign-up__item__wrapper--secondary">
+                        <p class="sign-up__item sign-up__item--secondary">
+                            <input type="text" placeholder="Контактный телефон" class="sign-up__input sign-up__input--secondary">
+                        </p>
+                        <p class="sign-up__item sign-up__item--secondary">
+                            <input type="text" placeholder="Контактный e-mail" class="sign-up__input sign-up__input--secondary">
+                        </p>
+                    </div>
+                    <p class="sign-up__item sign-up__item--secondary-main">
+                        <input type="text" placeholder="Доп. информация для мастера" class="sign-up__input sign-up__input--description">
+                    </p>
+                </div>
+                <div class="sign-up__choice__wrapper">
+                    <h3 class="sign-up__choice">Выберите модель бороды: </h3>
+                    <div class="choice__wrapper">
+                        <div class="choice__item">
+                            <input type="radio" id="choice1" name="choice" class="choice__input">
+                            <label for="choice1" class="choice__text">
+                                <p class="choice__icon-text">адмирал</p>
+                                <svg width="52" height="49">
+                                    <use xlink:href="#icon-beard1" class="choice__icon-beard"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="choice__item">
+                            <input type="radio" id="choice2" name="choice" class="choice__input">
+                            <label for="choice2" class="choice__text">
+                                <p class="choice__icon-text">лесоруб</p>
+                                <svg width="58" height="68">
+                                    <use xlink:href="#icon-beard2" class="choice__icon-beard"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="choice__item">
+                            <input type="radio" id="choice3" name="choice" class="choice__input">
+                            <label for="choice3" class="choice__text">
+                                <p class="choice__icon-text">полярник</p>
+                                <svg width="63" height="78">
+                                    <use xlink:href="#icon-beard3" class="choice__icon-beard"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="choice__item">
+                            <input type="radio" id="choice4" name="choice" class="choice__input">
+                            <label for="choice4" class="choice__text">
+                                <p class="choice__icon-text">боярин</p>
+                                <svg width="57" height="97">
+                                    <use xlink:href="#icon-beard4" class="choice__icon-beard"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="choice__item">
+                            <input type="radio" id="choice5" name="choice" class="choice__input">
+                            <label for="choice5" class="choice__text">
+                                <p class="choice__description">мудрец</p>
+                                <svg width="45" height="104">
+                                    <use xlink:href="#icon-beard5" class="choice__icon-beard"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sign-up__services__wrapper">
+                    <h3 class="services__title">Дополнительные услуги: </h3>
+                    <div class="services__wrapper">
+                        <div class="services__item">
+                            <input type="checkbox" id="services1" class="services__input">
+                            <label for="services1" class="services__text">Подкрасить бороду</label>
+                        </div>
+                        <div class="services__item">
+                            <input type="checkbox" id="services2" class="services__input">
+                            <label for="services2" class="services__text">Накрутить усы</label>
+                        </div>
+                        <div class="services__item">
+                            <input type="checkbox" id="services3" class="services__input">
+                            <label for="services3" class="services__text">Причесать бороду</label>
+                        </div>
+                        <div class="services__item">
+                            <input type="checkbox" id="services4" class="services__input">
+                            <label for="services4" class="services__text">Подровнять виски</label>
+                        </div>
+                        <div class="services__item">
+                            <input type="checkbox" id="services5" class="services__input">
+                            <label for="services5" class="services__text">Убрать седину</label>
+                        </div>
+                        <div class="services__item">
+                            <input type="checkbox" id="services6" class="services__input">
+                            <label for="services6" class="services__text">Отполировать лысину</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="sign-up__submit-button">Отправить заявку</button>
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="page-footer page-footer--works">
+        <div class="page-footer__item page-footer__wrapper">
+            <div class="page-footer__contacts contacts">
+                <b class="contacts__title">Барбершоп Бородинский</b>
+                <p class="contacts__text">
+                    <p class="contacts__text__wrapper">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p> <br>
+                    <p href="tel:+78125556666" class="contacts__phone">
+                        <span class="phone__tel">Тел.: </span> +7 (812) 555-66-66
+                    </p>
+                </p>
+            </div>
+            <div class="page-footer__item page-footer__social social">
+                <b class="social__title">Давайте дружить!</b>
+                    <div class="social__list">
+                        <a href="https://vk.com/htmlacademy" class="social__item social__link social__link--vkontakte">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/icons/vk-icon-small.png">
+                                <img src="img/icons/vk-icon-big.png" alt="Мы в вконтакте">
+                            </picture>
+                        </a>
+                        <a href="https://www.facebook.com/htmlacademy" class="social__item social__link social__link--facebook">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/icons/facebook-icon-small.png">
+                                <img src="img/icons/facebook-icon-big.png" alt="Мы в Facebook">
+                            </picture>
+                        </a>
+                        <a href="https://www.instagram.com/htmlacademy" class="social__item social__link social__link--instagram">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/icons/insta-icon-small.png">
+                                <img src="img/icons/insta-icon-big.png" alt="Мы в Instagram">
+                            </picture>
+                        </a>
+                    </div>
+            </div>
+            <div class="page-footer__item page-footer__copyright copyright">
+                <b class="copyright__text">Разработано: </b>
+                <div class="copyright__link__wrapper">
+                    <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header-menu.js"></script>
+</body>
+</html>
